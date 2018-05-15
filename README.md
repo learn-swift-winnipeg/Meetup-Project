@@ -9,6 +9,10 @@ The problem this Prject aims to solve is to keept track of topics covered in a M
 
 The main goal of this Project is to keep track of things we are working on, ask questions, and learn! We want to make it as easy as possible to share great ideas, spread tge knowledge we have, ask the questions we have, and show off all the cool things we are doing as a part of this Meetup
 
+
+# Issue Tracking, and Maintenance
+To keep track of bugs, new features, feature requests, etc we have decided to use the Guthub issues. This isn't set in stone, but as an inital attempt we will try it. If there are bugs found, or features you want to see add them to this repo! Also, for any new code, or code that fixes a bug open a Pull Request. As a rule lets make sure at least 2 people look over you code before the Pull Request is accepted and your code gets merged to the Project. 
+
 # Architecture 
 ![App-Arch](./docs/images/arch.png)
 
