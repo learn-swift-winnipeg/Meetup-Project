@@ -1,6 +1,6 @@
 # Meetup Project
 
-In this repo you should  find everything you need to run out Project. We might want to break the different components in different directories. For example the Web UI should be kept in the `front-end` directory, or the iOS App should be kept in the `iOS` directory. Then each subsequent part can organize the their own part as they see fit. 
+In this repo you should  find everything you need to run out Project. We might want to break the different components in different directories. For example the Web UI should be kept in the `frontend` directory, or the iOS App should be kept in the `iOS` directory. Then each subsequent part can organize the their own part as they see fit. 
 
 # Purpose
 The reason why we are doing this is because each contributor to this Project has mentioned that we should make something as a way to show off our skills, promote our Meetup, and learn new things. 
