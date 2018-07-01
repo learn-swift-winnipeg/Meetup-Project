@@ -1,43 +1,21 @@
-version: 2
+machine:
+  xcode:
+    version: "9.3"
 
-jobs:
-  linux:
-    docker:
-      - image: swift:4.1
-    steps:
-      - checkout
-      - run: 
-          name: Compile code
-          command: swift build
-      - run: 
-          name: Run unit tests
-          command: swift test
+dependencies:
+  pre:
+    - brew install vapor/tap/vapor
+    - swift package fetch
+  cache_directories:
+    - "./.build"
 
-  linux-release:
-    docker:
-      - image: swift:4.1
-    steps:
-      - checkout
-      - run: 
-          name: Compile code with optimizations
-          command: swift build -c release
+compile:
+  override:
+    - vapor build
 
-workflows:
-  version: 2
-  tests:
-    jobs:
-      - linux
-      - linux-release
-
-  nightly:
-    triggers:
-      - schedule:
-          cron: "0 0 * * *"
-          filters:
-            branches:
-              only:
-                - master
-    jobs:
-      - linux
-      - linux-release
-      
+test:
+  override:
+    - set -o pipefail &&
+      swift test 2>&1 |
+      tee $CIRCLE_ARTIFACTS/test.log |
+      xcpretty --color --report junit --output $CIRCLE_TEST_REPORTS/results.xml
