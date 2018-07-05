@@ -12,7 +12,7 @@ jobs:
       xcode: "9.2.0"
 
     steps:
-      - checkout
+      - sudo checkout
 
       # Build the app and run tests
       - run:
