@@ -5,17 +5,17 @@
 version: 2
 jobs:
   build:
-    working_directory: ~/ios/Meetup-Project/
-
     # Specify the Xcode version to use
     macos:
       xcode: "9.2.0"
 
     steps:
       # Checkout repository
+      working_directory: ~/ios/Meetup-Project/
       - checkout
       
       # Build the app and run tests
+      working_directory: ~/ios/Meetup-Project/
       - run:
           name: Build and run tests
           command: fastlane scan
