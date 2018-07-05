@@ -5,15 +5,13 @@
 version: 2
 jobs:
   build:
-    working_directory: ~/ios/Meetup Project/
+    working_directory: ~/Meetup-Project/ios/Meetup Project/
 
     # Specify the Xcode version to use
     macos:
       xcode: "9.2.0"
 
     steps:
-      - checkout
-
       # Build the app and run tests
       - run:
           name: Build and run tests
