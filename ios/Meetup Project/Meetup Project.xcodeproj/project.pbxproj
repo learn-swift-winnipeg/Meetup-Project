@@ -12,7 +12,18 @@
 		5D91436920DC8EF70049808B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D91436720DC8EF70049808B /* Main.storyboard */; };
 		5D91436B20DC8EF80049808B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D91436A20DC8EF80049808B /* Assets.xcassets */; };
 		5D91436E20DC8EF80049808B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D91436C20DC8EF80049808B /* LaunchScreen.storyboard */; };
+		5DF70F3820EDD6B3001CDCA1 /* MeetupProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF70F3720EDD6B3001CDCA1 /* MeetupProjectTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5DF70F3A20EDD6B3001CDCA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5D91435820DC8EF70049808B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D91435F20DC8EF70049808B;
+			remoteInfo = "Meetup Project";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		5D91436020DC8EF70049808B /* Meetup Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Meetup Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +33,20 @@
 		5D91436A20DC8EF80049808B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D91436D20DC8EF80049808B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5D91436F20DC8EF80049808B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DF70F3520EDD6B2001CDCA1 /* MeetupProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeetupProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DF70F3720EDD6B3001CDCA1 /* MeetupProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetupProjectTests.swift; sourceTree = "<group>"; };
+		5DF70F3920EDD6B3001CDCA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		5D91435D20DC8EF70049808B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DF70F3220EDD6B2001CDCA1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				5D91436220DC8EF70049808B /* Meetup Project */,
+				5DF70F3620EDD6B3001CDCA1 /* MeetupProjectTests */,
 				5D91436120DC8EF70049808B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				5D91436020DC8EF70049808B /* Meetup Project.app */,
+				5DF70F3520EDD6B2001CDCA1 /* MeetupProjectTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,6 +85,15 @@
 				5D91436F20DC8EF80049808B /* Info.plist */,
 			);
 			path = "Meetup Project";
+			sourceTree = "<group>";
+		};
+		5DF70F3620EDD6B3001CDCA1 /* MeetupProjectTests */ = {
+			isa = PBXGroup;
+			children = (
+				5DF70F3720EDD6B3001CDCA1 /* MeetupProjectTests.swift */,
+				5DF70F3920EDD6B3001CDCA1 /* Info.plist */,
+			);
+			path = MeetupProjectTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,6 +116,24 @@
 			productReference = 5D91436020DC8EF70049808B /* Meetup Project.app */;
 			productType = "com.apple.product-type.application";
 		};
+		5DF70F3420EDD6B2001CDCA1 /* MeetupProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DF70F3E20EDD6B3001CDCA1 /* Build configuration list for PBXNativeTarget "MeetupProjectTests" */;
+			buildPhases = (
+				5DF70F3120EDD6B2001CDCA1 /* Sources */,
+				5DF70F3220EDD6B2001CDCA1 /* Frameworks */,
+				5DF70F3320EDD6B2001CDCA1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5DF70F3B20EDD6B3001CDCA1 /* PBXTargetDependency */,
+			);
+			name = MeetupProjectTests;
+			productName = MeetupProjectTests;
+			productReference = 5DF70F3520EDD6B2001CDCA1 /* MeetupProjectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -96,6 +146,10 @@
 				TargetAttributes = {
 					5D91435F20DC8EF70049808B = {
 						CreatedOnToolsVersion = 9.4.1;
+					};
+					5DF70F3420EDD6B2001CDCA1 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 5D91435F20DC8EF70049808B;
 					};
 				};
 			};
@@ -113,6 +167,7 @@
 			projectRoot = "";
 			targets = (
 				5D91435F20DC8EF70049808B /* Meetup Project */,
+				5DF70F3420EDD6B2001CDCA1 /* MeetupProjectTests */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +183,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5DF70F3320EDD6B2001CDCA1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -140,7 +202,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5DF70F3120EDD6B2001CDCA1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DF70F3820EDD6B3001CDCA1 /* MeetupProjectTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5DF70F3B20EDD6B3001CDCA1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5D91435F20DC8EF70049808B /* Meetup Project */;
+			targetProxy = 5DF70F3A20EDD6B3001CDCA1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		5D91436720DC8EF70049808B /* Main.storyboard */ = {
@@ -312,6 +390,46 @@
 			};
 			name = Release;
 		};
+		5DF70F3C20EDD6B3001CDCA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E5P894ED53;
+				INFOPLIST_FILE = MeetupProjectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sebfct.MeetupProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Meetup Project.app/Meetup Project";
+			};
+			name = Debug;
+		};
+		5DF70F3D20EDD6B3001CDCA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E5P894ED53;
+				INFOPLIST_FILE = MeetupProjectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sebfct.MeetupProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Meetup Project.app/Meetup Project";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -329,6 +447,15 @@
 			buildConfigurations = (
 				5D91437320DC8EF80049808B /* Debug */,
 				5D91437420DC8EF80049808B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DF70F3E20EDD6B3001CDCA1 /* Build configuration list for PBXNativeTarget "MeetupProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DF70F3C20EDD6B3001CDCA1 /* Debug */,
+				5DF70F3D20EDD6B3001CDCA1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
