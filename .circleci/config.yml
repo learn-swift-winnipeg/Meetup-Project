@@ -5,18 +5,14 @@
 version: 2
 jobs:
   build:
+    working_directory: ~/ios/Meetup Project/
 
     # Specify the Xcode version to use
     macos:
-      xcode: "9.4.1"
+      xcode: "9.2.0"
 
     steps:
       - checkout
-
-      # Install CocoaPods
-      - run:
-          name: Install CocoaPods
-          command: pod install
 
       # Build the app and run tests
       - run:
