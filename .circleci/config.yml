@@ -23,10 +23,9 @@ jobs:
       - run:
           name: post checkout check
           command: |
+            cd ios/Meetup-Project
             echo $PWD
             ls -aslh .
-            ls -aslh ~
-            ls -aslh ~/tmp
       
 #       - run:
 #           name: Set Ruby Version
