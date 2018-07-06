@@ -20,15 +20,15 @@ jobs:
     steps:
       - checkout
       
+      - run:
+          name: Set Ruby Version
+          command:  echo "ruby-2.4" > ~/.ruby-version
+      
       - run: bundle install
       
       - run:
           name: Fastlane
           command: bundle exec fastlane $FASTLANE_LANE
-          
-      - run:
-          name: Set Ruby Version
-          command:  echo "ruby-2.4" > ~/.ruby-version
           
       - run:
           name: Fastlane
