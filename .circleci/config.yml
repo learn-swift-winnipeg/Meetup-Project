@@ -27,8 +27,7 @@ jobs:
       - run:
           name: Fastlane
           command: 
-            cd ios/Meetup-Project/
-            bundle exec fastlane scan
+            cd ios/Meetup-Project/ && bundle exec fastlane scan
           
       - run:
           name: Fastlane
