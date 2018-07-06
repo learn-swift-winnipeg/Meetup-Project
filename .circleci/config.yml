@@ -18,9 +18,8 @@ jobs:
       # Setup env
       - run: bundle install
       
-      # Build the app and run tests
+      # Build the app and run tests          
       - run:
-          path: ~/ios/Meetup-Project/
           name: Build and run tests
           command: fastlane scan
           environment:
