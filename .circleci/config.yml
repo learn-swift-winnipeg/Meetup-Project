@@ -19,17 +19,6 @@ jobs:
       - checkout
       
       - run:
-          name: checking location
-          command: |
-            ls -aslh .
-            
-      - run:
-          name: relocation
-          command: |
-            cd ios/Meetup-Project/
-            ls -aslh .
-      
-      - run:
           name: Set Ruby Version
           command:  echo "ruby-2.4" > ~/.ruby-version
       
@@ -37,7 +26,9 @@ jobs:
       
       - run:
           name: Fastlane
-          command: bundle exec fastlane $FASTLANE_LANE
+          command: 
+            cd ios/Meetup-Project/
+            bundle exec fastlane scan
           
       - run:
           name: Fastlane
