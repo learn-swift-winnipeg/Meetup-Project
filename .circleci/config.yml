@@ -16,7 +16,7 @@ jobs:
     shell: /bin/bash --login -o pipefail
     
     steps:
-      - checkout
+      - checkout:
         path: ~/ios/Meetup-Project
       
       - run:
