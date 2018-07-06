@@ -4,9 +4,7 @@
 #
 version: 2
 jobs:
-  build:
-    working_directory: ~/ios/Meetup-Project
-    
+  build:    
     # Specify the Xcode version to use
     macos:
       xcode: "9.2.0"
@@ -21,8 +19,14 @@ jobs:
       - checkout
       
       - run:
-          name: post checkout check
+          name: checking location
           command: |
+            ls -aslh .
+            
+      - run:
+          name: relocation
+          command: |
+            cd ios/Meetup-Project/
             ls -aslh .
       
 #       - run:
