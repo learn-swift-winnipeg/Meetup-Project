@@ -15,6 +15,8 @@ jobs:
       # Checkout repository
       - checkout
       
+      - ls
+      - whereami
       # Setup env
       - run: bundle install
       
