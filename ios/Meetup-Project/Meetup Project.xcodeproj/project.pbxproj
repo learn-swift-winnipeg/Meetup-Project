@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		5D91436420DC8EF70049808B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D91436320DC8EF70049808B /* AppDelegate.swift */; };
-		5D91436620DC8EF70049808B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D91436520DC8EF70049808B /* ViewController.swift */; };
-		5D91436920DC8EF70049808B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D91436720DC8EF70049808B /* Main.storyboard */; };
 		5D91436B20DC8EF80049808B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D91436A20DC8EF80049808B /* Assets.xcassets */; };
 		5D91436E20DC8EF80049808B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D91436C20DC8EF80049808B /* LaunchScreen.storyboard */; };
+		5DE987EB20EF079C00DA64B7 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DE987EA20EF079C00DA64B7 /* Home.storyboard */; };
+		5DE987ED20EF07C000DA64B7 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE987EC20EF07C000DA64B7 /* HomeVC.swift */; };
 		5DF70F3820EDD6B3001CDCA1 /* MeetupProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF70F3720EDD6B3001CDCA1 /* MeetupProjectTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -28,11 +28,11 @@
 /* Begin PBXFileReference section */
 		5D91436020DC8EF70049808B /* Meetup Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Meetup Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D91436320DC8EF70049808B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5D91436520DC8EF70049808B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5D91436820DC8EF70049808B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5D91436A20DC8EF80049808B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D91436D20DC8EF80049808B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5D91436F20DC8EF80049808B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DE987EA20EF079C00DA64B7 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		5DE987EC20EF07C000DA64B7 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		5DF70F3520EDD6B2001CDCA1 /* MeetupProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeetupProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DF70F3720EDD6B3001CDCA1 /* MeetupProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetupProjectTests.swift; sourceTree = "<group>"; };
 		5DF70F3920EDD6B3001CDCA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -78,13 +78,37 @@
 			isa = PBXGroup;
 			children = (
 				5D91436320DC8EF70049808B /* AppDelegate.swift */,
-				5D91436520DC8EF70049808B /* ViewController.swift */,
-				5D91436720DC8EF70049808B /* Main.storyboard */,
-				5D91436A20DC8EF80049808B /* Assets.xcassets */,
-				5D91436C20DC8EF80049808B /* LaunchScreen.storyboard */,
 				5D91436F20DC8EF80049808B /* Info.plist */,
+				5DE987E920EF077C00DA64B7 /* Controllers */,
+				5DE987E820EF077100DA64B7 /* Views */,
+				5DE987E720EF076A00DA64B7 /* Models */,
 			);
 			path = "Meetup Project";
+			sourceTree = "<group>";
+		};
+		5DE987E720EF076A00DA64B7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5DE987E820EF077100DA64B7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5D91436C20DC8EF80049808B /* LaunchScreen.storyboard */,
+				5D91436A20DC8EF80049808B /* Assets.xcassets */,
+				5DE987EA20EF079C00DA64B7 /* Home.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5DE987E920EF077C00DA64B7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5DE987EC20EF07C000DA64B7 /* HomeVC.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		5DF70F3620EDD6B3001CDCA1 /* MeetupProjectTests */ = {
@@ -179,7 +203,7 @@
 			files = (
 				5D91436E20DC8EF80049808B /* LaunchScreen.storyboard in Resources */,
 				5D91436B20DC8EF80049808B /* Assets.xcassets in Resources */,
-				5D91436920DC8EF70049808B /* Main.storyboard in Resources */,
+				5DE987EB20EF079C00DA64B7 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,7 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D91436620DC8EF70049808B /* ViewController.swift in Sources */,
+				5DE987ED20EF07C000DA64B7 /* HomeVC.swift in Sources */,
 				5D91436420DC8EF70049808B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,14 +245,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		5D91436720DC8EF70049808B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5D91436820DC8EF70049808B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5D91436C20DC8EF80049808B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
