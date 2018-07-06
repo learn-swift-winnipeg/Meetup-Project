@@ -2,6 +2,6 @@
 <testsuites name='MeetupProjectTests.xctest' tests='2' failures='0'>
   <testsuite name='MeetupProjectTests.MeetupProjectTests' tests='2' failures='0'>
     <testcase classname='MeetupProjectTests.MeetupProjectTests' name='testExample' time='0.001'/>
-    <testcase classname='MeetupProjectTests.MeetupProjectTests' name='testPerformanceExample' time='1.053'/>
+    <testcase classname='MeetupProjectTests.MeetupProjectTests' name='testPerformanceExample' time='1.270'/>
   </testsuite>
 </testsuites>
