@@ -4,9 +4,7 @@
 #
 version: 2
 jobs:
-  build:
-    working_directory: ~/ios/Meetup-Project/
-    
+  build:    
     # Specify the Xcode version to use
     macos:
       xcode: "9.2.0"
@@ -19,10 +17,21 @@ jobs:
     
     steps:
       - checkout
+      
+      - run:
+          name: Set Ruby Version
+          command:  echo "ruby-2.4" > ~/.ruby-version
+      
       - run: bundle install
+      
       - run:
           name: Fastlane
-          command: bundle exec fastlane $FASTLANE_LANE
+          command: 
+            cd ios/Meetup-Project/ && bundle exec fastlane scan
+          
+      - run:
+          name: Fastlane
+          command: bundle exec fastlane
       - store_artifacts:
           path: output
       - store_test_results:
