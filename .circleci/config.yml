@@ -5,7 +5,7 @@
 version: 2
 jobs:
   build:
-    working_directory: /Users/distiller/project
+    working_directory: ~/ios/Meetup-Project
     
     # Specify the Xcode version to use
     macos:
@@ -18,7 +18,7 @@ jobs:
     shell: /bin/bash --login -o pipefail
     
     steps:
-      - checkout
+#       - checkout
       
       - run:
           name: post checkout check
