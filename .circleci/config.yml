@@ -5,7 +5,7 @@
 version: 2
 jobs:
   build:
-    working_directory: ./ios/Meetup-Project/
+    working_directory: ~/ios/Meetup-Project/
     
     # Specify the Xcode version to use
     macos:
@@ -13,7 +13,6 @@ jobs:
 
     environment:
       FL_OUTPUT_DIR: output
-      FASTLANE_LANE: test
     
     shell: /bin/bash --login -o pipefail
     
@@ -27,7 +26,7 @@ jobs:
       - run: bundle install
       - run:
           name: Fastlane
-          command: bundle exec fastlane $FASTLANE_LANE
+          command: bundle exec fastlane
       - store_artifacts:
           path: output
       - store_test_results:
