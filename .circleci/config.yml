@@ -5,7 +5,7 @@
 version: 2
 jobs:
   build:
-    working_directory: ~/ios/Meetup-Project/
+    working_directory: ./ios/Meetup-Project/
     
     # Specify the Xcode version to use
     macos:
