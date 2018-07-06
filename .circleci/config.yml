@@ -15,9 +15,6 @@ jobs:
       # Checkout repository
       - checkout
       
-      # Setup env
-      - run: bundle install
-      
       # Build the app and run tests          
       - run:
           name: Build and run tests
