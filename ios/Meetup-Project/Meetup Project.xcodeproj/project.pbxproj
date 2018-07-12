@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D8962C620F3105E00FF0DCD /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D8962C520F3105E00FF0DCD /* Login.storyboard */; };
+		5D8962C820F311F900FF0DCD /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8962C720F311F900FF0DCD /* LoginVC.swift */; };
+		5D8962CD20F319AA00FF0DCD /* AppProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8962CC20F319AA00FF0DCD /* AppProvider.swift */; };
+		5D8962D220F3231C00FF0DCD /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8962D120F3231C00FF0DCD /* LoginService.swift */; };
+		5D8962D420F3234100FF0DCD /* MockLoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8962D320F3234100FF0DCD /* MockLoginManager.swift */; };
+		5D8962D720F323A000FF0DCD /* LoginCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8962D620F323A000FF0DCD /* LoginCommon.swift */; };
+		5D8962D820F323D300FF0DCD /* LoginCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8962D620F323A000FF0DCD /* LoginCommon.swift */; };
+		5D8962DB20F3249500FF0DCD /* LoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8962DA20F3249500FF0DCD /* LoginTests.swift */; };
+		5D8962DF20F6DB2900FF0DCD /* AppProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8962DE20F6DB2900FF0DCD /* AppProvider.swift */; };
 		5D91436420DC8EF70049808B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D91436320DC8EF70049808B /* AppDelegate.swift */; };
 		5D91436B20DC8EF80049808B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D91436A20DC8EF80049808B /* Assets.xcassets */; };
 		5D91436E20DC8EF80049808B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D91436C20DC8EF80049808B /* LaunchScreen.storyboard */; };
@@ -26,6 +35,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5D8962C520F3105E00FF0DCD /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		5D8962C720F311F900FF0DCD /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		5D8962CC20F319AA00FF0DCD /* AppProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppProvider.swift; sourceTree = "<group>"; };
+		5D8962D120F3231C00FF0DCD /* LoginService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		5D8962D320F3234100FF0DCD /* MockLoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLoginManager.swift; sourceTree = "<group>"; };
+		5D8962D620F323A000FF0DCD /* LoginCommon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCommon.swift; sourceTree = "<group>"; };
+		5D8962DA20F3249500FF0DCD /* LoginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTests.swift; sourceTree = "<group>"; };
+		5D8962DE20F6DB2900FF0DCD /* AppProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppProvider.swift; sourceTree = "<group>"; };
 		5D91436020DC8EF70049808B /* Meetup Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Meetup Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D91436320DC8EF70049808B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5D91436A20DC8EF80049808B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -56,9 +73,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5D8962C920F3144C00FF0DCD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5D8962D120F3231C00FF0DCD /* LoginService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		5D8962CE20F322D200FF0DCD /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				5D8962D320F3234100FF0DCD /* MockLoginManager.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		5D8962D520F3239100FF0DCD /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				5D8962D620F323A000FF0DCD /* LoginCommon.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		5D8962D920F3247800FF0DCD /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				5D8962DA20F3249500FF0DCD /* LoginTests.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		5D91435720DC8EF70049808B = {
 			isa = PBXGroup;
 			children = (
+				5D8962D520F3239100FF0DCD /* Common */,
 				5D91436220DC8EF70049808B /* Meetup Project */,
 				5DF70F3620EDD6B3001CDCA1 /* MeetupProjectTests */,
 				5D91436120DC8EF70049808B /* Products */,
@@ -77,8 +127,10 @@
 		5D91436220DC8EF70049808B /* Meetup Project */ = {
 			isa = PBXGroup;
 			children = (
+				5D8962CC20F319AA00FF0DCD /* AppProvider.swift */,
 				5D91436320DC8EF70049808B /* AppDelegate.swift */,
 				5D91436F20DC8EF80049808B /* Info.plist */,
+				5D8962C920F3144C00FF0DCD /* Services */,
 				5DE987E920EF077C00DA64B7 /* Controllers */,
 				5DE987E820EF077100DA64B7 /* Views */,
 				5DE987E720EF076A00DA64B7 /* Models */,
@@ -99,6 +151,7 @@
 				5D91436C20DC8EF80049808B /* LaunchScreen.storyboard */,
 				5D91436A20DC8EF80049808B /* Assets.xcassets */,
 				5DE987EA20EF079C00DA64B7 /* Home.storyboard */,
+				5D8962C520F3105E00FF0DCD /* Login.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -107,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				5DE987EC20EF07C000DA64B7 /* HomeVC.swift */,
+				5D8962C720F311F900FF0DCD /* LoginVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -114,6 +168,9 @@
 		5DF70F3620EDD6B3001CDCA1 /* MeetupProjectTests */ = {
 			isa = PBXGroup;
 			children = (
+				5D8962DE20F6DB2900FF0DCD /* AppProvider.swift */,
+				5D8962D920F3247800FF0DCD /* Login */,
+				5D8962CE20F322D200FF0DCD /* Mocks */,
 				5DF70F3720EDD6B3001CDCA1 /* MeetupProjectTests.swift */,
 				5DF70F3920EDD6B3001CDCA1 /* Info.plist */,
 			);
@@ -201,6 +258,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D8962C620F3105E00FF0DCD /* Login.storyboard in Resources */,
 				5D91436E20DC8EF80049808B /* LaunchScreen.storyboard in Resources */,
 				5D91436B20DC8EF80049808B /* Assets.xcassets in Resources */,
 				5DE987EB20EF079C00DA64B7 /* Home.storyboard in Resources */,
@@ -223,6 +281,10 @@
 			files = (
 				5DE987ED20EF07C000DA64B7 /* HomeVC.swift in Sources */,
 				5D91436420DC8EF70049808B /* AppDelegate.swift in Sources */,
+				5D8962D820F323D300FF0DCD /* LoginCommon.swift in Sources */,
+				5D8962D220F3231C00FF0DCD /* LoginService.swift in Sources */,
+				5D8962C820F311F900FF0DCD /* LoginVC.swift in Sources */,
+				5D8962CD20F319AA00FF0DCD /* AppProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,6 +293,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5DF70F3820EDD6B3001CDCA1 /* MeetupProjectTests.swift in Sources */,
+				5D8962D420F3234100FF0DCD /* MockLoginManager.swift in Sources */,
+				5D8962D720F323A000FF0DCD /* LoginCommon.swift in Sources */,
+				5D8962DB20F3249500FF0DCD /* LoginTests.swift in Sources */,
+				5D8962DF20F6DB2900FF0DCD /* AppProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

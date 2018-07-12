@@ -1,7 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<testsuites name='MeetupProjectTests.xctest' tests='2' failures='0'>
+<testsuites name='MeetupProjectTests.xctest' tests='4' failures='0'>
+  <testsuite name='MeetupProjectTests.LoginTests' tests='2' failures='0'>
+    <testcase classname='MeetupProjectTests.LoginTests' name='testLoginFailure' time='0.003'/>
+    <testcase classname='MeetupProjectTests.LoginTests' name='testLoginSuccess' time='0.000'/>
+  </testsuite>
   <testsuite name='MeetupProjectTests.MeetupProjectTests' tests='2' failures='0'>
-    <testcase classname='MeetupProjectTests.MeetupProjectTests' name='testExample' time='0.001'/>
-    <testcase classname='MeetupProjectTests.MeetupProjectTests' name='testPerformanceExample' time='1.270'/>
+    <testcase classname='MeetupProjectTests.MeetupProjectTests' name='testExample' time='0.000'/>
+    <testcase classname='MeetupProjectTests.MeetupProjectTests' name='testPerformanceExample' time='0.400'/>
   </testsuite>
 </testsuites>
