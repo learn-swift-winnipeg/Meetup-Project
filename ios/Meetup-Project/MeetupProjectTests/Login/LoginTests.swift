@@ -34,4 +34,16 @@ class LoginTests: XCTestCase {
         XCTAssert(loginResult.success == false)
     }
     
+    func testOAuth2LoginSuccess() {
+        let _ = appProvider.loginManager.oauth2Login(UIViewController())
+        
+        XCTAssert(UserDefaults.standard.string(forKey: OAuthConstants.meetupAccessToken) == "THIS-IS-YOUR-TOKEN")
+    }
+    
+    func testOAuth2LogoutSuccess() {
+        let _ = appProvider.loginManager.oauth2Logout()
+        
+        XCTAssertNil(UserDefaults.standard.string(forKey: OAuthConstants.meetupAccessToken))
+    }
+    
 }

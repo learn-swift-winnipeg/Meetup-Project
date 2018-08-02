@@ -6,7 +6,7 @@
 //  Copyright © 2018 sebastien FOCK CHOW THO. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class MockLoginManager: Logger {
     static let shared = MockLoginManager()
@@ -20,5 +20,15 @@ class MockLoginManager: Logger {
         } else {
             return (false, "Random error message", nil)
         }
+    }
+    
+    func oauth2Login(_ controller: UIViewController) {
+        UserDefaults.standard.set("THIS-IS-YOUR-TOKEN", forKey: OAuthConstants.meetupAccessToken)
+        UserDefaults.standard.synchronize()
+    }
+    
+    func oauth2Logout() {
+        UserDefaults.standard.removePersistentDomain(forName: Bundle.main.bundleIdentifier!)
+        UserDefaults.standard.synchronize()
     }
 }
