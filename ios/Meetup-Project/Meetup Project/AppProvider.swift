@@ -12,6 +12,7 @@ class AppProvider {
     static let shared = AppProvider()
     
     var loginManager: Logger!
+    var meetupApi: MeetupAPI!
     
     init() {
         #if debug
@@ -19,7 +20,8 @@ class AppProvider {
             loginManager = MockLoginManager()
         }
         #else
-        loginManager = LogingManager()
+        loginManager = LogingManager.shared
+        meetupApi = MeetupAPI.shared
         #endif
     }
 }

@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		5D28DE362112745300CA6B47 /* OAuthConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D28DE352112745300CA6B47 /* OAuthConstants.swift */; };
 		5D28DE3721129EC700CA6B47 /* OAuthConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D28DE352112745300CA6B47 /* OAuthConstants.swift */; };
+		5D28DE3A211504BD00CA6B47 /* MeetupData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D28DE39211504BD00CA6B47 /* MeetupData.swift */; };
 		5D8962C620F3105E00FF0DCD /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D8962C520F3105E00FF0DCD /* Login.storyboard */; };
 		5D8962C820F311F900FF0DCD /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8962C720F311F900FF0DCD /* LoginVC.swift */; };
 		5D8962CD20F319AA00FF0DCD /* AppProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8962CC20F319AA00FF0DCD /* AppProvider.swift */; };
-		5D8962D220F3231C00FF0DCD /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8962D120F3231C00FF0DCD /* LoginService.swift */; };
+		5D8962D220F3231C00FF0DCD /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8962D120F3231C00FF0DCD /* API.swift */; };
 		5D8962D420F3234100FF0DCD /* MockLoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8962D320F3234100FF0DCD /* MockLoginManager.swift */; };
 		5D8962D720F323A000FF0DCD /* LoginCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8962D620F323A000FF0DCD /* LoginCommon.swift */; };
 		5D8962D820F323D300FF0DCD /* LoginCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8962D620F323A000FF0DCD /* LoginCommon.swift */; };
@@ -41,10 +42,11 @@
 		395522FB3B7B30209F983C3E /* Pods-Meetup Project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meetup Project.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Meetup Project/Pods-Meetup Project.debug.xcconfig"; sourceTree = "<group>"; };
 		3F98DF2BD60FE2B210197A51 /* Pods-Meetup Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meetup Project.release.xcconfig"; path = "Pods/Target Support Files/Pods-Meetup Project/Pods-Meetup Project.release.xcconfig"; sourceTree = "<group>"; };
 		5D28DE352112745300CA6B47 /* OAuthConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthConstants.swift; sourceTree = "<group>"; };
+		5D28DE39211504BD00CA6B47 /* MeetupData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetupData.swift; sourceTree = "<group>"; };
 		5D8962C520F3105E00FF0DCD /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		5D8962C720F311F900FF0DCD /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		5D8962CC20F319AA00FF0DCD /* AppProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppProvider.swift; sourceTree = "<group>"; };
-		5D8962D120F3231C00FF0DCD /* LoginService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		5D8962D120F3231C00FF0DCD /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		5D8962D320F3234100FF0DCD /* MockLoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLoginManager.swift; sourceTree = "<group>"; };
 		5D8962D620F323A000FF0DCD /* LoginCommon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCommon.swift; sourceTree = "<group>"; };
 		5D8962DA20F3249500FF0DCD /* LoginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTests.swift; sourceTree = "<group>"; };
@@ -92,7 +94,7 @@
 		5D8962C920F3144C00FF0DCD /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				5D8962D120F3231C00FF0DCD /* LoginService.swift */,
+				5D8962D120F3231C00FF0DCD /* API.swift */,
 				5D28DE352112745300CA6B47 /* OAuthConstants.swift */,
 			);
 			path = Services;
@@ -160,6 +162,7 @@
 		5DE987E720EF076A00DA64B7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				5D28DE39211504BD00CA6B47 /* MeetupData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -351,8 +354,9 @@
 				5DE987ED20EF07C000DA64B7 /* HomeVC.swift in Sources */,
 				5D91436420DC8EF70049808B /* AppDelegate.swift in Sources */,
 				5D8962D820F323D300FF0DCD /* LoginCommon.swift in Sources */,
-				5D8962D220F3231C00FF0DCD /* LoginService.swift in Sources */,
+				5D8962D220F3231C00FF0DCD /* API.swift in Sources */,
 				5D28DE362112745300CA6B47 /* OAuthConstants.swift in Sources */,
+				5D28DE3A211504BD00CA6B47 /* MeetupData.swift in Sources */,
 				5D8962C820F311F900FF0DCD /* LoginVC.swift in Sources */,
 				5D8962CD20F319AA00FF0DCD /* AppProvider.swift in Sources */,
 			);

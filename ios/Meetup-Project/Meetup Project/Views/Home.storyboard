@@ -33,14 +33,33 @@
                     <view key="view" contentMode="scaleToFill" id="rfH-DP-4yI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vC9-fR-U81">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="FSZ-yA-PC9" id="cA8-hA-D6G"/>
+                                    <outlet property="delegate" destination="FSZ-yA-PC9" id="8wk-LT-sGf"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ND7-47-DJc" firstAttribute="trailing" secondItem="vC9-fR-U81" secondAttribute="trailing" id="XlP-ZR-9xg"/>
+                            <constraint firstItem="ND7-47-DJc" firstAttribute="bottom" secondItem="vC9-fR-U81" secondAttribute="bottom" id="ZPz-N8-exz"/>
+                            <constraint firstItem="vC9-fR-U81" firstAttribute="leading" secondItem="ND7-47-DJc" secondAttribute="leading" id="keY-TK-MSq"/>
+                            <constraint firstItem="vC9-fR-U81" firstAttribute="top" secondItem="ND7-47-DJc" secondAttribute="top" id="sP9-y2-ruN"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ND7-47-DJc"/>
                     </view>
                     <navigationItem key="navigationItem" id="jJU-Ll-rWJ"/>
+                    <connections>
+                        <outlet property="tableview" destination="vC9-fR-U81" id="gw8-CK-eVh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0sG-1o-Rhq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="84" y="16"/>
+            <point key="canvasLocation" x="84" y="15.742128935532236"/>
         </scene>
     </scenes>
 </document>
