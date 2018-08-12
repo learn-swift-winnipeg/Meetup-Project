@@ -4,30 +4,52 @@
 #
 version: 2
 jobs:
-  build:    
+  build-ios:
     # Specify the Xcode version to use
     macos:
       xcode: "9.2.0"
 
     environment:
       FL_OUTPUT_DIR: output
-    
+
     shell: /bin/bash --login -o pipefail
-    
+
     steps:
       - checkout
-      
+
       - run:
           name: Set Ruby Version
           command:  echo "ruby-2.4" > ~/.ruby-version
-      
+
       - run: bundle install
-      
+
       - run:
           name: Fastlane
-          command: 
+          command:
             cd ios/Meetup-Project && bundle exec fastlane scan
       - store_artifacts:
-          path: output
-      - store_test_results:
-          path: output/scan
+          path: ~/Library/Logs/scan
+          destination: scan-logs
+
+  build-backend:
+    docker:
+      - image: swift:4.1
+
+    steps:
+      - checkout
+      - run:
+          name: Run Backend Tests
+          path: backend/meetup-backend/
+          command: swift test
+
+workflows:
+  version: 2
+
+  build-ios:
+    jobs:
+      - build-ios
+    # Later we will add deploy
+  build-backend:
+    jobs:
+      - build-backend
+   # Later we will deploy
