@@ -5,4 +5,6 @@ public func routes(_ router: Router) throws {
     router.get("/health") { req -> String in
         return "Everything is fine..."
     }
+    
+    try router.register(collection: AuthRouteController())
 }
