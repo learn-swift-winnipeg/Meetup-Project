@@ -2,3 +2,6 @@
 .swift-version
 ios/Meetup-Project/Meetup Project/Services/OAuthConstants.swift
 frontend/yarn-error.log
+.env
+development.env
+production.env
