@@ -1,0 +1,22 @@
+{
+  "name": "web-ui",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "dotenv": "^6.0.0",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-oauth-flow": "^1.1.1",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.1.4"
+  },
+  "scripts": {
+    "start": "react-app-env start",
+    "build": "react-app-env build",
+    "test": "react-app-env test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "react-app-env": "^1.2.2"
+  }
+}
