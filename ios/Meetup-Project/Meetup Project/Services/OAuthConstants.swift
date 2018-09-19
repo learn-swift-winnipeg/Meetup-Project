@@ -16,8 +16,8 @@ struct OAuthConstants {
     // app website: https://www.meetup.com/learn-swift-winnipeg/
     // redirect uri: meetupProject://com.sfct.meetupproject
     
-    static let key                     = "<your-key>"
-    static let secret                  = "<your-secret>"
+    static let key                     = "oj6ivukdb229plfdckcf6on1v8"
+    static let secret                  = "6bugrfvtt7lsu0cfnia7t89neo"
     static let redirectUri             = "meetupProject://com.sfct.meetupproject"
     static let authorizationEndpoint   = "https://secure.meetup.com/oauth2/authorize"
     static let accessTokenEndpoint     = "https://secure.meetup.com/oauth2/access"

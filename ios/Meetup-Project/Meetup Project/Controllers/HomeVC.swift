@@ -87,4 +87,23 @@ extension HomeVC: UITableViewDataSource, UITableViewDelegate {
         
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let meetup = meetups[indexPath.row]
+        
+        presentDetailedMeetup(meetup)
+    }
+}
+
+// MARK: - Navigation
+
+extension HomeVC {
+    func presentDetailedMeetup(_ meetup: MeetupData) {
+        let storyboard = UIStoryboard(name: "Meetup", bundle: nil)
+        let root = storyboard.instantiateInitialViewController() as! UITabBarController
+        let chatRoomVC = root.viewControllers?.first as! ChatRoomVC
+        chatRoomVC.meetup = meetup
+        
+        navigationController?.pushViewController(root, animated: true)
+    }
 }

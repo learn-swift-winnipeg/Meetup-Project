@@ -116,3 +116,21 @@ class MeetupAPI {
         task.resume()
     }
 }
+
+class MeetupProjectAPI: BackendProvider {
+    static let shared = MeetupProjectAPI()
+    
+    func retrieveChat(forMeetup: MeetupData) -> [ChatData] {
+        let john = UserData(username: "john", password: "Doe", role: .user)
+        let jasmine = UserData(username: "jasmine", password: "Doe", role: .user)
+        
+        
+        return [
+            ChatData.init(body: "Sed ut perspiciatis unde omnis", user: john, time: Date()),
+            ChatData.init(body: "iste natus error sit voluptatem accusantium", user: jasmine, time: Date()),
+            ChatData.init(body: "doloremque laudantium, totam rem", user: john, time: Date()),
+            ChatData.init(body: "aperiam, eaque ipsa quae ab", user: jasmine, time: Date()),
+            ChatData.init(body: "illo inventore veritatis et quasi architecto", user: john, time: Date())
+        ]
+    }
+}

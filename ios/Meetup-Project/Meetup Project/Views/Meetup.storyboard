@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tOp-gg-IXd">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="EVb-4M-Xz0">
+            <objects>
+                <tabBarController id="tOp-gg-IXd" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UKU-56-4vo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="7Yo-m8-vP2" kind="relationship" relationship="viewControllers" id="OrL-AX-gxW"/>
+                        <segue destination="Gz4-gF-Sn2" kind="relationship" relationship="viewControllers" id="Yv4-Ns-EEs"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s0A-F8-GYi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-606" y="90"/>
+        </scene>
+        <!--Incoming Event-->
+        <scene sceneID="QFJ-2Z-ekg">
+            <objects>
+                <viewController id="Gz4-gF-Sn2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VLx-Mg-M4a">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="yWb-Sk-ioS"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Incoming Event" id="Aow-8r-kjB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BHX-jZ-jJ5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="585" y="473"/>
+        </scene>
+        <!--Chat Room-->
+        <scene sceneID="fh3-yT-Q5E">
+            <objects>
+                <viewController id="7Yo-m8-vP2" customClass="ChatRoomVC" customModule="Meetup_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kg0-qT-0gB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DLo-6i-Soc">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="7Yo-m8-vP2" id="bJM-hS-FyU"/>
+                                    <outlet property="delegate" destination="7Yo-m8-vP2" id="vn4-h1-pyD"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="DLo-6i-Soc" firstAttribute="leading" secondItem="U3e-db-wna" secondAttribute="leading" id="Amu-oy-T2v"/>
+                            <constraint firstItem="U3e-db-wna" firstAttribute="bottom" secondItem="DLo-6i-Soc" secondAttribute="bottom" id="dIO-vH-D8m"/>
+                            <constraint firstItem="U3e-db-wna" firstAttribute="top" secondItem="DLo-6i-Soc" secondAttribute="top" constant="20" id="eHK-QC-hRV"/>
+                            <constraint firstItem="U3e-db-wna" firstAttribute="trailing" secondItem="DLo-6i-Soc" secondAttribute="trailing" id="qj0-rz-q54"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="U3e-db-wna"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Chat Room" id="DLh-aT-PSE"/>
+                    <connections>
+                        <outlet property="tableView" destination="DLo-6i-Soc" id="dpY-0J-YEc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L9S-aL-tbf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="584.79999999999995" y="-251.42428785607197"/>
+        </scene>
+    </scenes>
+</document>

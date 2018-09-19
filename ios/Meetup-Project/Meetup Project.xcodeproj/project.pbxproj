@@ -10,6 +10,7 @@
 		5D28DE362112745300CA6B47 /* OAuthConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D28DE352112745300CA6B47 /* OAuthConstants.swift */; };
 		5D28DE3721129EC700CA6B47 /* OAuthConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D28DE352112745300CA6B47 /* OAuthConstants.swift */; };
 		5D28DE3A211504BD00CA6B47 /* MeetupData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D28DE39211504BD00CA6B47 /* MeetupData.swift */; };
+		5D2AF67A2151D1AC00D0EFCC /* BackendCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2AF6792151D1AC00D0EFCC /* BackendCommon.swift */; };
 		5D8962C620F3105E00FF0DCD /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D8962C520F3105E00FF0DCD /* Login.storyboard */; };
 		5D8962C820F311F900FF0DCD /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8962C720F311F900FF0DCD /* LoginVC.swift */; };
 		5D8962CD20F319AA00FF0DCD /* AppProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8962CC20F319AA00FF0DCD /* AppProvider.swift */; };
@@ -24,6 +25,8 @@
 		5D91436E20DC8EF80049808B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D91436C20DC8EF80049808B /* LaunchScreen.storyboard */; };
 		5DE987EB20EF079C00DA64B7 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DE987EA20EF079C00DA64B7 /* Home.storyboard */; };
 		5DE987ED20EF07C000DA64B7 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE987EC20EF07C000DA64B7 /* HomeVC.swift */; };
+		5DEB2C982151F18800F9ABCC /* Meetup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DEB2C972151F18800F9ABCC /* Meetup.storyboard */; };
+		5DEB2C9A2151F29400F9ABCC /* ChatRoomVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEB2C992151F29400F9ABCC /* ChatRoomVC.swift */; };
 		5DF70F3820EDD6B3001CDCA1 /* MeetupProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF70F3720EDD6B3001CDCA1 /* MeetupProjectTests.swift */; };
 		C11A337DF3DD08EC6B1C2925 /* Pods_Meetup_Project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEAC16EA677F732F3B7A2AAD /* Pods_Meetup_Project.framework */; };
 /* End PBXBuildFile section */
@@ -43,6 +46,7 @@
 		3F98DF2BD60FE2B210197A51 /* Pods-Meetup Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meetup Project.release.xcconfig"; path = "Pods/Target Support Files/Pods-Meetup Project/Pods-Meetup Project.release.xcconfig"; sourceTree = "<group>"; };
 		5D28DE352112745300CA6B47 /* OAuthConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthConstants.swift; sourceTree = "<group>"; };
 		5D28DE39211504BD00CA6B47 /* MeetupData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetupData.swift; sourceTree = "<group>"; };
+		5D2AF6792151D1AC00D0EFCC /* BackendCommon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackendCommon.swift; sourceTree = "<group>"; };
 		5D8962C520F3105E00FF0DCD /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		5D8962C720F311F900FF0DCD /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		5D8962CC20F319AA00FF0DCD /* AppProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppProvider.swift; sourceTree = "<group>"; };
@@ -58,6 +62,8 @@
 		5D91436F20DC8EF80049808B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5DE987EA20EF079C00DA64B7 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		5DE987EC20EF07C000DA64B7 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		5DEB2C972151F18800F9ABCC /* Meetup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Meetup.storyboard; sourceTree = "<group>"; };
+		5DEB2C992151F29400F9ABCC /* ChatRoomVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomVC.swift; sourceTree = "<group>"; };
 		5DF70F3520EDD6B2001CDCA1 /* MeetupProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeetupProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DF70F3720EDD6B3001CDCA1 /* MeetupProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetupProjectTests.swift; sourceTree = "<group>"; };
 		5DF70F3920EDD6B3001CDCA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -112,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				5D8962D620F323A000FF0DCD /* LoginCommon.swift */,
+				5D2AF6792151D1AC00D0EFCC /* BackendCommon.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -174,6 +181,7 @@
 				5D91436A20DC8EF80049808B /* Assets.xcassets */,
 				5DE987EA20EF079C00DA64B7 /* Home.storyboard */,
 				5D8962C520F3105E00FF0DCD /* Login.storyboard */,
+				5DEB2C972151F18800F9ABCC /* Meetup.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -183,6 +191,7 @@
 			children = (
 				5DE987EC20EF07C000DA64B7 /* HomeVC.swift */,
 				5D8962C720F311F900FF0DCD /* LoginVC.swift */,
+				5DEB2C992151F29400F9ABCC /* ChatRoomVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -291,6 +300,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DEB2C982151F18800F9ABCC /* Meetup.storyboard in Resources */,
 				5D8962C620F3105E00FF0DCD /* Login.storyboard in Resources */,
 				5D91436E20DC8EF80049808B /* LaunchScreen.storyboard in Resources */,
 				5D91436B20DC8EF80049808B /* Assets.xcassets in Resources */,
@@ -353,10 +363,12 @@
 			files = (
 				5DE987ED20EF07C000DA64B7 /* HomeVC.swift in Sources */,
 				5D91436420DC8EF70049808B /* AppDelegate.swift in Sources */,
+				5D2AF67A2151D1AC00D0EFCC /* BackendCommon.swift in Sources */,
 				5D8962D820F323D300FF0DCD /* LoginCommon.swift in Sources */,
 				5D8962D220F3231C00FF0DCD /* API.swift in Sources */,
 				5D28DE362112745300CA6B47 /* OAuthConstants.swift in Sources */,
 				5D28DE3A211504BD00CA6B47 /* MeetupData.swift in Sources */,
+				5DEB2C9A2151F29400F9ABCC /* ChatRoomVC.swift in Sources */,
 				5D8962C820F311F900FF0DCD /* LoginVC.swift in Sources */,
 				5D8962CD20F319AA00FF0DCD /* AppProvider.swift in Sources */,
 			);
