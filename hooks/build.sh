@@ -1,2 +1,4 @@
 #!/bin/bash
-swift build -c release --package-path ./../backend/meetup-backend
+ls
+cd ./backend/meetup-backend
+swift build -c release
